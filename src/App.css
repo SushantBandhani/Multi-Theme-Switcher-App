@@ -1,0 +1,73 @@
+:root.spring {
+  --font-family: "Inter", sans-serif;
+  --font-size: 16px;
+
+  --primary-bg: #f5fff7;
+  --secondary-bg: #d8f3dc;
+
+  --text-primary: #1b4332;
+  --text-secondary: #2d6a4f;
+
+  --accent-color: #55d097;
+  --button-bg: #40916c;
+  --button-text: #ffffff;
+
+  --border-radius: 6px;
+}
+
+:root.lavender {
+  --font-family: "Segoe UI", sans-serif;
+  --font-size: 16px;
+
+  --primary-bg: #f5f3ff;
+  --secondary-bg: #e9d8fd;
+
+  --text-primary: #4b0082;
+  --text-secondary: #6b21a8;
+
+  --accent-color: #a78bfa;
+  --button-bg: #8b5cf6;
+  --button-text: #ffffff;
+
+  --border-radius: 8px;
+}
+
+:root.midnight {
+  --font-family: "Roboto Mono", monospace;
+  --font-size: 16px;
+
+  --primary-bg: #0f172a;
+  --secondary-bg: #1e293b;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+
+  --accent-color: #6366f1;
+  --button-bg: #6366f1;
+  --button-text: #0f172a;
+
+  --border-radius: 6px;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.6em 1.2em;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
