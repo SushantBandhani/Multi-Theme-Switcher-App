@@ -2,7 +2,7 @@ Multi-Theme-switcher-App
 
 # 🛒 MyCart – React Shopping Cart App
 
-A modern and responsive shopping cart application built with **React**, **Redux Toolkit**, and **Tailwind CSS**, offering a smooth and dynamic e-commerce experience.
+A modern and responsive shopping cart application frontend built with **React**, **Redux Toolkit**, and **Tailwind CSS**, offering a smooth and dynamic e-commerce experience.
 
 ## 🚀 Features
 
@@ -23,7 +23,7 @@ A modern and responsive shopping cart application built with **React**, **Redux 
 
 ## 📦 Getting Started
 
-- git clone https://github.com/your-username/your-repo-name.git
+- git clone https://github.com/SushantBandhani/Multi-Theme-Switcher-App.git
 - cd your-repo-name
 - npm install
 - npm run dev
