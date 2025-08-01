@@ -6,22 +6,22 @@ export const THEME_SETTINGS = [
   {
     id: "1",
     label: "Spring",
-    type:'spring',
+    type: "spring",
     icon: GiTreehouse,
-    colorClass: "text-green-400", // Spring = Green
+    colorClass: "text-green-400",
   },
   {
     id: "2",
     label: "Lavender",
-    type:'lavender',
+    type: "lavender",
     icon: MdColorLens,
-    colorClass: "text-purple-300", // Lavender = Purple/Lavender
+    colorClass: "text-purple-300",
   },
   {
     id: "3",
     label: "Midnight",
-    type:'midnight',
+    type: "midnight",
     icon: FaMoon,
-    colorClass: "text-yellow-400", // Midnight = Yellow Moon
+    colorClass: "text-yellow-400",
   },
 ];

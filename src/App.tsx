@@ -1,14 +1,12 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import Main from './pages/Main'
+import "./App.css";
+import DashBoardLayout from "./layout/DashBoardLayout";
 
 function App() {
   return (
-   <>
-    <Navbar></Navbar>
-    <Main></Main>
-   </>
-  )
+    <>
+      <DashBoardLayout></DashBoardLayout>
+    </>
+  );
 }
 
-export default App
+export default App;

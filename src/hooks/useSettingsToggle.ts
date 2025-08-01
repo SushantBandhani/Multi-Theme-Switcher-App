@@ -3,40 +3,37 @@ import { useSelector } from "react-redux";
 import type { RootState } from "../redux/store";
 
 const useSettingsToggle = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const settingsRef = useRef<HTMLDivElement>(null);
-    const theme = useSelector((state: RootState) => state.mode.theme);
+  const [isOpen, setIsOpen] = useState(false);
+  const settingsRef = useRef<HTMLDivElement>(null);
+  const theme = useSelector((state: RootState) => state.mode.theme);
 
-    useEffect(() => {
-        document.documentElement.className = theme;
-    }, [theme]);
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme]);
 
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        settingsRef.current &&
+        !settingsRef.current.contains(e.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
 
-    useEffect(() => {
-        const handleClickOutside = (e: MouseEvent) => {
-            if (
-                settingsRef.current &&
-                !settingsRef.current.contains(e.target as Node)
-            ) {
-                setIsOpen(false);
-            }
-        };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
 
-        document.addEventListener("click", handleClickOutside);
-        return () => document.removeEventListener("click", handleClickOutside);
-    }, []);
+  const handleToggle = () => {
+    setIsOpen((prev) => !prev);
+  };
 
+  return {
+    handleToggle,
+    isOpen,
+    settingsRef,
+  };
+};
 
-    const handleToggle = () => {
-        setIsOpen(prev => !prev);
-    }
-
-    return {
-        handleToggle,
-        isOpen,
-        settingsRef
-    }
-
-}
-
-export default useSettingsToggle
+export default useSettingsToggle;

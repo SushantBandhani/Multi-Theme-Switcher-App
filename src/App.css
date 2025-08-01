@@ -12,28 +12,41 @@
   --button-bg: #40916c;
   --button-text: #ffffff;
 
-  --border-radius: 6px;
+  --border-radius: 8px;
+  --border-color: #95d5b2;
+
+  --shadow: 0 4px 12px rgba(64, 145, 108, 0.2);
+  --border-style: 2px solid var(--border-color);
 }
 
 :root.lavender {
   --font-family: "Segoe UI", sans-serif;
   --font-size: 16px;
 
-  --primary-bg: #f5f3ff;
-  --secondary-bg: #e9d8fd;
+  --primary-bg: #f9f5ff;
+  --secondary-bg: #ede9fe;
+  --card-bg: #f3e8ff;
 
-  --text-primary: #4b0082;
+  --text-primary: #3b0764;
   --text-secondary: #6b21a8;
+  --text-muted: #a78bfa;
 
-  --accent-color: #a78bfa;
+  --accent-color: #c084fc;
+  --accent-color-hover: #a855f7;
+
   --button-bg: #8b5cf6;
+  --button-hover: #7c3aed;
   --button-text: #ffffff;
 
-  --border-radius: 8px;
+  --border-radius: 10px;
+  --border-color: #d8b4fe;
+
+  --shadow: 0 4px 16px rgba(168, 139, 250, 0.25);
+  --border-style: 2px dashed var(--border-color);
 }
 
 :root.midnight {
-  --font-family: "Roboto Mono", monospace;
+  --font-family: "Roboto Mono", Pacifico;
   --font-size: 16px;
 
   --primary-bg: #0f172a;
@@ -46,7 +59,11 @@
   --button-bg: #6366f1;
   --button-text: #0f172a;
 
-  --border-radius: 6px;
+  --border-radius: 10px;
+  --border-color: #334155;
+
+  --shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
+  --border-style: 2px groove var(--border-color);
 }
 
 body {
@@ -68,6 +85,18 @@ button {
   transition: background 0.3s;
 }
 
-button:hover {
-  background-color: var(--accent-color);
+.card {
+  background: var(--secondary-bg);
+  color: var(--text-primary);
+  border: var(--border-style);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+.price {
+  font-size: 1rem;
+  color: #2e7d32;
+  font-weight: bold;
+  margin-top: 8px;
 }
