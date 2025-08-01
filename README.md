@@ -21,4 +21,11 @@ A modern and responsive shopping cart application built with **React**, **Redux 
 - **Tailwind CSS** – Utility-first CSS framework
 - **React Hot Toast** – Beautiful toast notifications
 
+## 📦 Getting Started
+
+- git clone https://github.com/your-username/your-repo-name.git
+- cd your-repo-name
+- npm install
+- npm run dev
+
 You can view the live project InnoFront deployed on Netlify: https://multitheme-switcher-app.netlify.app/
