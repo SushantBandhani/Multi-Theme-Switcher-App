@@ -10,7 +10,7 @@ interface ClickInterface {
 
 const Modal = () => {
   const dispatch = useDispatch<DispatchType>();
-  const handleClick = ({ e, type }: ClickInterface) => {
+  const handleClick = ({ type }: ClickInterface) => {
     dispatch(toggleTheme(type));
     localStorage.setItem("Theme", type);
   };
