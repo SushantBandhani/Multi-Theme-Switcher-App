@@ -71,6 +71,9 @@ body {
   color: var(--text-primary);
   font-family: var(--font-family);
   font-size: var(--font-size);
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
 }
 
 button {
@@ -82,7 +85,9 @@ button {
   font-family: var(--font-family);
   font-size: var(--font-size);
   cursor: pointer;
-  transition: background 0.3s;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
 }
 
 .card {
