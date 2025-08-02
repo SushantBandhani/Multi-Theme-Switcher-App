@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Main from "./pages/Main.tsx";
 import Cart from "./pages/Cart.tsx";
 import { Toaster } from "react-hot-toast";
+import NotFound from "./pages/NotFound.tsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "*",
+        element: <NotFound></NotFound>,
       },
     ],
   },
