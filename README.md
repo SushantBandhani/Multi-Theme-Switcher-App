@@ -28,7 +28,7 @@ A modern and responsive shopping cart application frontend built with **React**,
 - npm install
 - npm run dev
 
-## Folder Structure
+## 🏗️ Folder Structure
 ```text
 └── Multi-theme-switcher-app/
     ├── src/
@@ -80,5 +80,6 @@ A modern and responsive shopping cart application frontend built with **React**,
     ├── tsconfig.json
     ├── tsconfig.node.json
     ├── vite.config.ts
-
+```
+## 🛠️ Project Live at:
 You can view the live project Multi-Theme-Switcher-App deployed on Netlify: https://multitheme-switcher-app.netlify.app/
