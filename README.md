@@ -15,11 +15,13 @@ A modern and responsive shopping cart application frontend built with **React**,
 
 ## 🧱 Tech Stack
 
-- **React** – Frontend framework
-- **Redux Toolkit** – State management
-- **TypeScript** – Type safety
-- **Tailwind CSS** – Utility-first CSS framework
-- **React Hot Toast** – Beautiful toast notifications
+- **React** – Frontend library for building user interfaces  
+- **Redux Toolkit** – Simplified and scalable state management  
+- **TypeScript** – Strongly typed JavaScript for better developer experience  
+- **Tailwind CSS** – Utility-first CSS framework for rapid UI development  
+- **Vite** – Fast and modern build tool for frontend apps  
+- **Prettier** – Code formatter to ensure consistent styling  
+- **React Hot Toast** – Lightweight toast notifications for user feedback 
 
 ## 📦 Getting Started
 
@@ -47,8 +49,7 @@ A modern and responsive shopping cart application frontend built with **React**,
     │   │   │   └── productsSlice.ts
     │   │   └── cart/
     │   │       └── cartSlice.ts
-    │   ├── pages/
-    │   │   ├── About.tsx
+    │   ├── pages/  
     │   │   ├── Cart.tsx
     │   │   ├── Main.tsx
     │   │   └── NotFound.tsx
