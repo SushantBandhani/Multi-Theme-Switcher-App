@@ -29,6 +29,7 @@ A modern and responsive shopping cart application frontend built with **React**,
 - npm run dev
 
 ## Folder Structure
+```text
 └── Multi-theme-switcher-app/
     ├── src/
     │   ├── App.css
