@@ -2,6 +2,7 @@ import { GiTreehouse } from "react-icons/gi";
 import { MdColorLens } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
 
+// Exporting theme data
 export const THEME_SETTINGS = [
   {
     id: "1",

@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-// const storedTheme = localStorage.getItem("theme");
 
+// Redux slice to manage theme
 export const themeSlice = createSlice({
   name: "theme",
   initialState: "spring",

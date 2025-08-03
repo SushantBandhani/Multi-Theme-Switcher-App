@@ -2,6 +2,7 @@ import { Outlet } from "react-router";
 import Navbar from "../components/Navbar";
 import SideBarLayout from "./SideBarLayout";
 
+// Renders the main dashboard layout
 const DashBoardLayout = () => {
   return (
     <div className="h-screen flex flex-col overflow-hidden">

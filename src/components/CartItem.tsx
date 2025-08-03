@@ -26,6 +26,8 @@ export const makeSelectItemById = (id: number | string) =>
     (state: RootState) => state.cart.data,
     (data) => data.find((ele) => ele.id === id),
   );
+
+// This component renders the individual cart items
 const CartItem: React.FC<CartItemsPropsType> = ({
   id,
   brand,

@@ -16,6 +16,8 @@ export type ProductCardProps = {
   quantity: number;
 };
 
+
+// This component renders the individual product card
 const ProductCard: React.FC<ProductCardProps> = ({
   id,
   title,

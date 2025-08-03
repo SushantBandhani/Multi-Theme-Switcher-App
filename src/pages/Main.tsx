@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import type { RootState } from "../redux/store";
 import ProductCard from "../components/ProductCard";
 
+// This component renders the product cards
 const Main = () => {
   const { data, status, error } = useSelector(
     (state: RootState) => state.products,

@@ -8,6 +8,7 @@ interface ClickInterface {
   type: string;
 }
 
+// This component renders the various themes
 const Modal = () => {
   const dispatch = useDispatch<DispatchType>();
   const handleClick = ({ type }: ClickInterface) => {

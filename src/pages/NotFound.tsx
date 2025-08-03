@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 
+// Renders a fallback UI for undefined routes (404 Not Found page)
 const NotFound = () => {
   const navigate = useNavigate();
 

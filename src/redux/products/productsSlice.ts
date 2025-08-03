@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
+// Async thunk to fetch the product list from the API
 export const fetchProducts = createAsyncThunk(
   "posts/fetchProducts",
   async () => {
@@ -45,10 +46,13 @@ const initialState: ProductSliceType = {
   error: null,
 };
 
+// Handles product slice
 const productSlice = createSlice({
   name: "products",
   initialState,
   reducers: {},
+
+  // Handles product fetching states: pending, fulfilled, rejected
   extraReducers: (builder) => {
     builder
       .addCase(fetchProducts.pending, (state) => {

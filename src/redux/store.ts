@@ -20,6 +20,7 @@ const preLoadState = {
   mode: getFromLocalStorage("theme", "spring"),
 };
 
+// Sets up the Redux store by combining cart, product, and theme slices
 export const store = configureStore({
   reducer: {
     mode: themeReducer,
@@ -29,5 +30,6 @@ export const store = configureStore({
   preloadedState: preLoadState,
 });
 
+// Exporting RootState and DispatchType types for use throughout the app
 export type RootState = ReturnType<typeof store.getState>;
 export type DispatchType = typeof store.dispatch;

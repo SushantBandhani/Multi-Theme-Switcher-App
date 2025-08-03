@@ -3,6 +3,7 @@ import type { DispatchType, RootState } from "../redux/store";
 import { useEffect } from "react";
 import { fetchProducts } from "../redux/products/productsSlice";
 
+// Helps to persist the cart state in localstorage and also helps to fetch products on page mount
 const usePersistentCart = () => {
   const cart = useSelector((state: RootState) => state.cart.data);
   const dispatch = useDispatch<DispatchType>();

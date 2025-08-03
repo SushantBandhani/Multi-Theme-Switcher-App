@@ -31,6 +31,7 @@ const router = createBrowserRouter([
   },
 ]);
 
+// Entry point: sets up Redux store and router, then renders the root app
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Provider store={store}>

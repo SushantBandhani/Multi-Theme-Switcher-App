@@ -8,6 +8,7 @@ const icons = [
   { id: 1, icon: "🛒", label: "Cart", path: "/cart" },
 ];
 
+// Renders the sidebar layout
 const SideBarLayout = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const theme = useSelector((state: RootState) => state.mode);

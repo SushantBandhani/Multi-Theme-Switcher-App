@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import type { RootState } from "../redux/store";
 import { Link } from "react-router";
 
+// This component renders navbar page and also helps to switch theme
 const Navbar = () => {
   const { isOpen, handleToggle, settingsRef } = useSettingsToggle();
   const itemsInCart = useSelector((state: RootState) => state.cart.data);

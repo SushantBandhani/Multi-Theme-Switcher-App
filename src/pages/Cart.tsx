@@ -20,6 +20,8 @@ const cartItemValues = createSelector(
   },
 );
 
+
+// This component renders the Cart page
 const Cart = () => {
   const items = useSelector(cartItemValues);
   const products = useSelector(

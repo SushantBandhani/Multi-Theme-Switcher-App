@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// Helps to find the cart item in the cart data
 function findItem(state: any, action: any) {
   return state.data.findIndex((ele: CartItemsPropsType) => {
     return ele.id === action.payload.id;
@@ -18,6 +19,7 @@ const initialState: CartSliceType = {
   data: [],
 };
 
+// Handles cart slice
 const cartSlice = createSlice({
   name: "cart",
   initialState,
