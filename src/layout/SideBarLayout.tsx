@@ -10,7 +10,7 @@ const icons = [
 
 const SideBarLayout = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const theme = useSelector((state: RootState) => state.mode.theme);
+  const theme = useSelector((state: RootState) => state.mode);
   console.log(theme);
   const path = useLocation();
   console.log(path);

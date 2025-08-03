@@ -12,7 +12,7 @@ const Modal = () => {
   const dispatch = useDispatch<DispatchType>();
   const handleClick = ({ type }: ClickInterface) => {
     dispatch(toggleTheme(type));
-    localStorage.setItem("Theme", type);
+    localStorage.setItem("theme", JSON.stringify(type));
   };
   return (
     <div className="flex flex-col gap-2.5 border border-gray-700 p-2.5 bg-white dark:bg-gray-900 rounded-md shadow-md w-fit min-w-[160px]">

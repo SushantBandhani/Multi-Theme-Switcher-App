@@ -5,7 +5,7 @@ import type { RootState } from "../redux/store";
 const useSettingsToggle = () => {
   const [isOpen, setIsOpen] = useState(false);
   const settingsRef = useRef<HTMLDivElement>(null);
-  const theme = useSelector((state: RootState) => state.mode.theme);
+  const theme = useSelector((state: RootState) => state.mode);
 
   useEffect(() => {
     document.documentElement.className = theme;
