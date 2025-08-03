@@ -23,7 +23,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   thumbnail,
 }) => {
   const dispatch = useDispatch<DispatchType>();
-  const theme = useSelector((state: RootState) => state.mode.theme);
+  const theme = useSelector((state: RootState) => state.mode);
   return (
     <div className="card rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 p-4 w-full max-w-xs">
       <img
