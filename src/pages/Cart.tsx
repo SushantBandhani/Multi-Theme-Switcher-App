@@ -3,25 +3,37 @@ import { useSelector } from "react-redux";
 import type { RootState } from "../redux/store";
 import toast from "react-hot-toast";
 import { createSelector } from "@reduxjs/toolkit";
+
 export const selectCartData = (state: RootState) => state.cart.data;
 export const selectProductData = (state: RootState) =>
   state.products.data?.products ?? [];
+
+const cartItemValues = createSelector(
+  [selectCartData, selectProductData],
+  (cartItems, products) => {
+    return cartItems
+      .map(({ id, quantity }) => {
+        const product = products.find((p) => p.id === id);
+        return product ? { ...product, quantity } : null;
+      })
+      .filter((item) => item !== null);
+  },
+);
+
 const Cart = () => {
-  const cartItemValues = createSelector(
-    [selectCartData, selectProductData],
-    (cartItems, products) => {
-      return cartItems
-        .map(({ id, quantity }) => {
-          const product = products.find((p) => p.id === id);
-          return product ? { ...product, quantity } : null;
-        })
-        .filter((item) => item !== null);
-    },
-  );
   const items = useSelector(cartItemValues);
+  const products = useSelector(
+    (state: RootState) => state.products.data?.products,
+  );
+
+  if (!products || products.length === 0) {
+    return (
+      <div className="text-center text-gray-500">Loading your cart...</div>
+    );
+  }
   return (
     <div>
-      {items.length === 0 ? (
+      {!items || items.length === 0 ? (
         <div className="col-span-full text-center text-lg font-medium text-gray-500">
           Your cart is empty or some products are missing.
         </div>
@@ -48,7 +60,7 @@ const Cart = () => {
                   brand={brand}
                   category={category}
                   description={description}
-                  imageSrc={images[0]}
+                  imageSrc={images?.[0] ?? thumbnail}
                   price={price}
                   title={title}
                   weight={weight}

@@ -1,15 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
-const storedTheme = localStorage.getItem("theme");
+// const storedTheme = localStorage.getItem("theme");
 
 export const themeSlice = createSlice({
   name: "theme",
-  initialState: {
-    theme: storedTheme ? storedTheme : "spring",
-  },
+  initialState: "spring",
   reducers: {
-    toggleTheme: (state, action) => {
-      state.theme = action.payload;
-      localStorage.setItem("theme", action.payload);
+    toggleTheme: (_, action) => {
+      return action.payload;
     },
   },
 });
