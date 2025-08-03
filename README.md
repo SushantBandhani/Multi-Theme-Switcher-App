@@ -28,4 +28,56 @@ A modern and responsive shopping cart application frontend built with **React**,
 - npm install
 - npm run dev
 
-You can view the live project InnoFront deployed on Netlify: https://multitheme-switcher-app.netlify.app/
+## Folder Structure
+└── Multi-theme-switcher-app/
+    ├── src/
+    │   ├── App.css
+    │   ├── App.tsx
+    │   ├── index.css
+    │   ├── main.tsx
+    │   ├── vite-env.d.ts
+    │   ├── utils/
+    │   │   └── themSetting.ts
+    │   ├── redux/
+    │   │   ├── store.ts
+    │   │   ├── theme/
+    │   │   │   └── themeSlice.ts
+    │   │   ├── products/
+    │   │   │   └── productsSlice.ts
+    │   │   └── cart/
+    │   │       └── cartSlice.ts
+    │   ├── pages/
+    │   │   ├── About.tsx
+    │   │   ├── Cart.tsx
+    │   │   ├── Main.tsx
+    │   │   └── NotFound.tsx
+    │   ├── layout/
+    │   │   ├── DashBoardLayout.tsx
+    │   │   └── SideBarLayout.tsx
+    │   ├── hooks/
+    │   │   ├── usePersistentCart.tsx
+    │   │   └── useSettingsToggle.ts
+    │   ├── components/
+    │   │   ├── CartItem.tsx
+    │   │   ├── Modal.tsx
+    │   │   ├── Navbar.tsx
+    │   │   └── ProductCard.tsx
+    │   └── assets/
+    │       └── react.svg
+    ├── public/
+    │   ├── vite.svg
+    │   └── _redirects
+    ├── .gitignore
+    ├── .prettierignore
+    ├── .prettierrc
+    ├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    ├── vite.config.ts
+
+You can view the live project Multi-Theme-Switcher-App deployed on Netlify: https://multitheme-switcher-app.netlify.app/
